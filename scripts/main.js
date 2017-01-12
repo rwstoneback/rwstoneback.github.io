@@ -15,22 +15,22 @@ function updateBgImage()
   let imgPath = '';
 
   //Dec, Jan, Feb
-  if(month === 12 || (month >= 1 && month <= 2))
+  if(month === 11 || (month >= 0 && month <= 1))
   {
     imgPath = 'images/winter.jpg';
   }
   //March, Apr, May
-  else if(month >= 3 && month <= 5)
+  else if(month >= 2 && month <= 4)
   {
     imgPath = 'images/spring.jpg';
   }
   //June, July, Aug
-  else if(month >= 6 && month <= 8)
+  else if(month >= 5 && month <= 7)
   {
     imgPath = 'images/summer.jpg';
   }
   //Sept, Oct, Nov
-  else if(month >= 9 && month <= 11)
+  else if(month >= 8 && month <= 10)
   {
     imgPath = 'images/fall.jpg';
   }
