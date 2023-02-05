@@ -225,6 +225,10 @@ header h2 strong {
   width: 30em;
 }
 
+.flex-row .left-col.no-right {
+  width: 42em;
+}
+
 .flex-row .right-col {
   width: 36em;
   display: flex;
