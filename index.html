@@ -49,30 +49,26 @@
       <div class="flex-container">
         <div class="skills-list">
           <ul>
-            <li>Scala, Java</li>
-            <li>C++, C#</li>
-            <li>Python</li>
-            <li>TypeScript, JavaScript</li>
-            <li>React, HTML, CSS</li>
+            <li>Scala, Java, C++, C#, Python</li>
+            <li>TypeScript, JavaScript, React</li>
+            <li>Kafka, Kubernetes, Docker</li>
+            <li>Terraform, CDK</li>
           </ul>
         </div>
         
         <div class="skills-list">
           <ul>
-            <li>SNS, SQS</li>
-            <li>Lambda</li>
-            <li>ECS, Fargate, ECR</li>
-            <li>Glue, Spark</li>
-            <li>Code Pipeline</li>
+            <li>SNS, SQS, S3, EC2, IAM</li>
+            <li>Lambda, ECS, EKS, Fargate</li>
+            <li>Glue, Spark, Step Functions</li>
+            <li>DynamoDB, Aurora PostgreSQL, Snowflake</li>
           </ul>
         </div>
         <div class="skills-list">
           <ul>
-            <li>Kafka</li>
-            <li>Kubernetes</li>
-            <li>CDK, Terraform</li>
-            <li>Docker</li>
             <li>GitHub Actions</li>
+            <li>New Relic</li>
+            <li>PagerDuty</li>
           </ul>
         </div>
       </div>
@@ -84,34 +80,46 @@
 
         <div class="flex-row first-project">
           <div class="left-col no-right">
-            <h2>Cox Automotive</h2>
+            <h2>@ Cox Automotive</h2>
             <p>
-              Developed Kafka Streams applications for collection and transformation of automotive
-              website analytics data, sent by thousands of websites, including Autotrader and KBB.
+              I developed Kafka Streams applications for the collection and transformation of automotive website analytics data.
+              This data was sent in real-time by thousands of websites, including <a href="https://www.autotrader.com/">Autotrader</a>
+              and <a href="https://www.kbb.com/">Kelley Blue Book</a>.
             </p>
             <p>
-              Developed serverless ETL pipelines to enhance and combine massive datasets, using
-              AWS technologies including S3, SNS, SQS, Lambda, Glue, ECS, Fargate, Dynamo, and
-              Step Functions.
+              I developed a GraphQL API for url shortening, as well as an application to handle the
+              lookup/redirect of the url, and to gather key consumer information.
+              This API needed to handle around 300,000 requests per minute and used AWS technologies such as
+              Lambda, API Gateway, Dynamo, and more.
             </p>
             <p>
-              Created a web application to allow internal users to easily update website configurations,
+              I developed many serverless ETL pipelines to enhance and combine massive datasets,
+              using AWS Glue, Lambda, ECS, SNS, SQS, S3, Dynamo, Aurora, and Step Functions.
+            </p>
+            <p>
+              I created a internal web application to allow users to easily update website configurations,
               and test that the data they are sending is getting to Kafka as expected.
+            </p>
+            <p>
+              I took on the role of Team Lead. This included working with the Product Owner to groom features,
+              pushing back on work that needed more clarity, working with Architects and Principals to bring new
+              ideas and technologies into sight, and making sure the team understood the work and continued to make progress.
             </p>
           </div>
         </div>
 
         <div class="flex-row">
           <div class="left-col">
-            <h2>SensorConnect</h2>
+            <h2>@ MicroStrain</h2>
+            <h3>SensorConnect</h3>
             <p>
-              <a href="http://www.microstrain.com/software/sensorconnect">SensorConnect</a> is the desktop software for Lord Sensing's Wireless and Inertial product lines. It allows customers to configure their hardware and visualize massive amounts of data in real-time.
+              <a href="http://www.microstrain.com/software/sensorconnect">SensorConnect</a> was the PC software for MicroStrain's wireless and wired sensors.
+              It allowed customers to configure their hardware and visualize massive amounts of data in real-time.
             </p>
             <p>
               I was the product owner, as well as a full-stack developer working with a team of developers.
-              SensorConnect uses the <a href="https://bitbucket.org/chromiumembedded/cef">Chromium Embedded Framework</a>,
+              SensorConnect used the <a href="https://bitbucket.org/chromiumembedded/cef">Chromium Embedded Framework</a>,
               allowing for a modern UI using HTML/CSS/JavaScript, while maintaining a fast, efficient C++ backend.
-              The use of WebGL, combined with smart data algorithms, provides the user with a smooth data visualization experience, even for massive amounts of data.
             </p>
           </div>
           <div class="right-col">
@@ -123,15 +131,19 @@
 
         <div class="flex-row">
           <div class="left-col">
-            <h2>MSCL</h2>
+            <h3>MSCL</h3>
             <p>
-              I was the lead developer on <a href="http://www.microstrain.com/software/mscl">MSCL</a> (MicroStrain Communication Library).
-              It makes it simple to write code to interact with LORD Sensing's Wireless and Inertial sensors.
+              I was the lead developer of <a href="http://www.microstrain.com/software/mscl">MSCL</a> (MicroStrain Communication Library).
             </p>
             <p>
-              The goal of MSCL is to have a library that is up to date, cross platform, multi-language, and well tested.
-              MSCL is written in C++, with libraries also available for Python and .NET (C#, VB, MATLAB, LabVIEW) by using <a href="http://swig.org/">SWIG</a>.
-              It is fully documented, unit tested, and includes example code and quick start guides.
+              The goal of MSCL was to have a library that was cross platform, multi-language, and enabled both internal developers and
+              external customers writing their own software, to interact with all of MicroStrain's sensors.
+              MSCL was written in C++, with interfaces created for Python and .NET (C#, VB, MATLAB, LabVIEW).
+            </p>
+            <p>  
+              I built MSCL from the ground up focusing on speed and usability.
+              It was fully documented, unit tested, and included example code and quick start guides.
+              I also worked directly with customers helping them debug any issues they had developing their own softare using MSCL.
             </p>
           </div>
           <div class="right-col">
@@ -141,13 +153,12 @@
 
         <div class="flex-row">
             <div class="left-col">
-              <h2>SensorCloud.com</h2>
+              <h3>SensorCloud.com</h3>
               <p>
-                SensorCloud is LORD Sensing's cloud platform for storing, visualizing, and analyzing data.
+                SensorCloud was MicroStrain's cloud platform for storing, visualizing, and analyzing data.
               </p>
               <p>
-                While the actual web application shares its interface with the SensorConnect PC software, I took on the
-                design and development of the <a href="https://sensorcloud.com/">sensorcloud.com</a> website.
+                I designed and developed the <a href="https://sensorcloud.com/">sensorcloud.com</a> website.
                 This included designing the look and feel, generating all the content, and implementing every page
                 with the goal of helping customers better understand our product, and ultimately driving more sales.
               </p>
@@ -162,7 +173,7 @@
         <hr class="section-divider">
 
         <div id="learnMoreSection">
-          <h2>Want to find out more?</h2>
+          <h2>Want to know more?</h2>
           <a href="files/Resume-RichardStoneback.pdf"><i class="fa fa-file-pdf-o"></i>View my Resume</a>
           <a href="mailto:rwstoneback@gmail.com"><i class="fa fa-envelope-o"></i>Send me an Email</a>
         </div>
@@ -186,7 +197,5 @@
     </script>
 
   </body>
-
-  <!-- TODO: use https://highlightjs.org/ -->
 
 </html>
